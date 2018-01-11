@@ -1,4 +1,4 @@
-# HOTH 3 - iOS Workshop README
+# Hack Sprint Session 1 README
 
 ## Table of Contents
 
