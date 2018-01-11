@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		441176B81FB8F0EC0095E00C /* HOTHBruinTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOTHBruinTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		441176B81FB8F0EC0095E00C /* HackSprintBruinTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackSprintBruinTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441176BB1FB8F0EC0095E00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		441176BD1FB8F0EC0095E00C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		441176C01FB8F0EC0095E00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		441176C21FB8F0EC0095E00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441176C51FB8F0EC0095E00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		441176C71FB8F0EC0095E00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		441176CC1FB8F0EC0095E00C /* HOTHBruinTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOTHBruinTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		441176CC1FB8F0EC0095E00C /* HackSprintBruinTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackSprintBruinTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441176D01FB8F0EC0095E00C /* HOTHBruinTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOTHBruinTapTests.swift; sourceTree = "<group>"; };
 		441176D21FB8F0EC0095E00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		441176D71FB8F0EC0095E00C /* HOTHBruinTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HOTHBruinTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		441176D71FB8F0EC0095E00C /* HackSprintBruinTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackSprintBruinTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441176DB1FB8F0EC0095E00C /* HOTHBruinTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOTHBruinTapUITests.swift; sourceTree = "<group>"; };
 		441176DD1FB8F0EC0095E00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,9 +77,9 @@
 		441176AF1FB8F0EC0095E00C = {
 			isa = PBXGroup;
 			children = (
-				441176BA1FB8F0EC0095E00C /* HOTHBruinTap */,
-				441176CF1FB8F0EC0095E00C /* HOTHBruinTapTests */,
-				441176DA1FB8F0EC0095E00C /* HOTHBruinTapUITests */,
+				441176BA1FB8F0EC0095E00C /* HackSprintBruinTap */,
+				441176CF1FB8F0EC0095E00C /* HackSprintBruinTapTests */,
+				441176DA1FB8F0EC0095E00C /* HackSprintBruinTapUITests */,
 				441176B91FB8F0EC0095E00C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,14 +87,14 @@
 		441176B91FB8F0EC0095E00C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				441176B81FB8F0EC0095E00C /* HOTHBruinTap.app */,
-				441176CC1FB8F0EC0095E00C /* HOTHBruinTapTests.xctest */,
-				441176D71FB8F0EC0095E00C /* HOTHBruinTapUITests.xctest */,
+				441176B81FB8F0EC0095E00C /* HackSprintBruinTap.app */,
+				441176CC1FB8F0EC0095E00C /* HackSprintBruinTapTests.xctest */,
+				441176D71FB8F0EC0095E00C /* HackSprintBruinTapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		441176BA1FB8F0EC0095E00C /* HOTHBruinTap */ = {
+		441176BA1FB8F0EC0095E00C /* HackSprintBruinTap */ = {
 			isa = PBXGroup;
 			children = (
 				441176BB1FB8F0EC0095E00C /* AppDelegate.swift */,
@@ -104,33 +104,33 @@
 				441176C41FB8F0EC0095E00C /* LaunchScreen.storyboard */,
 				441176C71FB8F0EC0095E00C /* Info.plist */,
 			);
-			path = HOTHBruinTap;
+			path = HackSprintBruinTap;
 			sourceTree = "<group>";
 		};
-		441176CF1FB8F0EC0095E00C /* HOTHBruinTapTests */ = {
+		441176CF1FB8F0EC0095E00C /* HackSprintBruinTapTests */ = {
 			isa = PBXGroup;
 			children = (
 				441176D01FB8F0EC0095E00C /* HOTHBruinTapTests.swift */,
 				441176D21FB8F0EC0095E00C /* Info.plist */,
 			);
-			path = HOTHBruinTapTests;
+			path = HackSprintBruinTapTests;
 			sourceTree = "<group>";
 		};
-		441176DA1FB8F0EC0095E00C /* HOTHBruinTapUITests */ = {
+		441176DA1FB8F0EC0095E00C /* HackSprintBruinTapUITests */ = {
 			isa = PBXGroup;
 			children = (
 				441176DB1FB8F0EC0095E00C /* HOTHBruinTapUITests.swift */,
 				441176DD1FB8F0EC0095E00C /* Info.plist */,
 			);
-			path = HOTHBruinTapUITests;
+			path = HackSprintBruinTapUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		441176B71FB8F0EC0095E00C /* HOTHBruinTap */ = {
+		441176B71FB8F0EC0095E00C /* HackSprintBruinTap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 441176E01FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HOTHBruinTap" */;
+			buildConfigurationList = 441176E01FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HackSprintBruinTap" */;
 			buildPhases = (
 				441176B41FB8F0EC0095E00C /* Sources */,
 				441176B51FB8F0EC0095E00C /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = HOTHBruinTap;
+			name = HackSprintBruinTap;
 			productName = HOTHBruinTap;
-			productReference = 441176B81FB8F0EC0095E00C /* HOTHBruinTap.app */;
+			productReference = 441176B81FB8F0EC0095E00C /* HackSprintBruinTap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		441176CB1FB8F0EC0095E00C /* HOTHBruinTapTests */ = {
+		441176CB1FB8F0EC0095E00C /* HackSprintBruinTapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 441176E31FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HOTHBruinTapTests" */;
+			buildConfigurationList = 441176E31FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HackSprintBruinTapTests" */;
 			buildPhases = (
 				441176C81FB8F0EC0095E00C /* Sources */,
 				441176C91FB8F0EC0095E00C /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				441176CE1FB8F0EC0095E00C /* PBXTargetDependency */,
 			);
-			name = HOTHBruinTapTests;
+			name = HackSprintBruinTapTests;
 			productName = HOTHBruinTapTests;
-			productReference = 441176CC1FB8F0EC0095E00C /* HOTHBruinTapTests.xctest */;
+			productReference = 441176CC1FB8F0EC0095E00C /* HackSprintBruinTapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		441176D61FB8F0EC0095E00C /* HOTHBruinTapUITests */ = {
+		441176D61FB8F0EC0095E00C /* HackSprintBruinTapUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 441176E61FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HOTHBruinTapUITests" */;
+			buildConfigurationList = 441176E61FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HackSprintBruinTapUITests" */;
 			buildPhases = (
 				441176D31FB8F0EC0095E00C /* Sources */,
 				441176D41FB8F0EC0095E00C /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				441176D91FB8F0EC0095E00C /* PBXTargetDependency */,
 			);
-			name = HOTHBruinTapUITests;
+			name = HackSprintBruinTapUITests;
 			productName = HOTHBruinTapUITests;
-			productReference = 441176D71FB8F0EC0095E00C /* HOTHBruinTapUITests.xctest */;
+			productReference = 441176D71FB8F0EC0095E00C /* HackSprintBruinTapUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 441176B31FB8F0EC0095E00C /* Build configuration list for PBXProject "HOTHBruinTap" */;
+			buildConfigurationList = 441176B31FB8F0EC0095E00C /* Build configuration list for PBXProject "HackSprintBruinTap" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +220,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				441176B71FB8F0EC0095E00C /* HOTHBruinTap */,
-				441176CB1FB8F0EC0095E00C /* HOTHBruinTapTests */,
-				441176D61FB8F0EC0095E00C /* HOTHBruinTapUITests */,
+				441176B71FB8F0EC0095E00C /* HackSprintBruinTap */,
+				441176CB1FB8F0EC0095E00C /* HackSprintBruinTapTests */,
+				441176D61FB8F0EC0095E00C /* HackSprintBruinTapUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,12 +285,12 @@
 /* Begin PBXTargetDependency section */
 		441176CE1FB8F0EC0095E00C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 441176B71FB8F0EC0095E00C /* HOTHBruinTap */;
+			target = 441176B71FB8F0EC0095E00C /* HackSprintBruinTap */;
 			targetProxy = 441176CD1FB8F0EC0095E00C /* PBXContainerItemProxy */;
 		};
 		441176D91FB8F0EC0095E00C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 441176B71FB8F0EC0095E00C /* HOTHBruinTap */;
+			target = 441176B71FB8F0EC0095E00C /* HackSprintBruinTap */;
 			targetProxy = 441176D81FB8F0EC0095E00C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -465,7 +465,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HOTHBruinTap.app/HOTHBruinTap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackSprintBruinTap.app/HackSprintBruinTap";
 			};
 			name = Debug;
 		};
@@ -482,7 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HOTHBruinTap.app/HOTHBruinTap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackSprintBruinTap.app/HackSprintBruinTap";
 			};
 			name = Release;
 		};
@@ -521,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		441176B31FB8F0EC0095E00C /* Build configuration list for PBXProject "HOTHBruinTap" */ = {
+		441176B31FB8F0EC0095E00C /* Build configuration list for PBXProject "HackSprintBruinTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				441176DE1FB8F0EC0095E00C /* Debug */,
@@ -530,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		441176E01FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HOTHBruinTap" */ = {
+		441176E01FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HackSprintBruinTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				441176E11FB8F0EC0095E00C /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		441176E31FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HOTHBruinTapTests" */ = {
+		441176E31FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HackSprintBruinTapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				441176E41FB8F0EC0095E00C /* Debug */,
@@ -548,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		441176E61FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HOTHBruinTapUITests" */ = {
+		441176E61FB8F0EC0095E00C /* Build configuration list for PBXNativeTarget "HackSprintBruinTapUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				441176E71FB8F0EC0095E00C /* Debug */,
