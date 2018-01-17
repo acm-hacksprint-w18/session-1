@@ -60,6 +60,7 @@ class ViewController: UIViewController {
     
     @IBAction func tapButtonTapped(_ sender: UIButton) {
         
+        // When we tap the tap button, increment score by 1 and update scoreLabel.
         score += 1
         scoreLabel.text = String(score)
         
@@ -67,14 +68,18 @@ class ViewController: UIViewController {
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         
+        // Reset score and scoreLabel text.
         score = 0
         scoreLabel.text = "0"
         
+        // Set time to 10s and set timeLabel's text accordingly.
         time = 10
         timeLabel.text = String(format: "%.2f", time)
         
+        // Start the timer.
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
         
+        // Disable the start button and enable the tap button.
         startButton.isEnabled = false
         tapButton.isEnabled = true
         
@@ -84,8 +89,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Disable tap button initially.
         tapButton.isEnabled = false
         
+        // Get user's high score from memory.
         highScore = UserDefaults.standard.integer(forKey: highScoreKey)
         highScoreLabel.text = "High Score: " + String(highScore)
     }
