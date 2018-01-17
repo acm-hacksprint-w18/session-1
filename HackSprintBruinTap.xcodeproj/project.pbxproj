@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		441176BC1FB8F0EC0095E00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441176BB1FB8F0EC0095E00C /* AppDelegate.swift */; };
-		441176BE1FB8F0EC0095E00C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441176BD1FB8F0EC0095E00C /* ViewController.swift */; };
 		441176C11FB8F0EC0095E00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441176BF1FB8F0EC0095E00C /* Main.storyboard */; };
 		441176C31FB8F0EC0095E00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441176C21FB8F0EC0095E00C /* Assets.xcassets */; };
 		441176C61FB8F0EC0095E00C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441176C41FB8F0EC0095E00C /* LaunchScreen.storyboard */; };
 		441176D11FB8F0EC0095E00C /* HOTHBruinTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441176D01FB8F0EC0095E00C /* HOTHBruinTapTests.swift */; };
 		441176DC1FB8F0EC0095E00C /* HOTHBruinTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441176DB1FB8F0EC0095E00C /* HOTHBruinTapUITests.swift */; };
+		44E1C673200F1B7A0095955C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1C672200F1B7A0095955C /* ViewController.swift */; };
+		44E1C675200F263B0095955C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44E1C674200F263B0095955C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +37,17 @@
 /* Begin PBXFileReference section */
 		441176B81FB8F0EC0095E00C /* HackSprintBruinTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackSprintBruinTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		441176BB1FB8F0EC0095E00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		441176BD1FB8F0EC0095E00C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		441176C01FB8F0EC0095E00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		441176C21FB8F0EC0095E00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441176C51FB8F0EC0095E00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		441176C71FB8F0EC0095E00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441176CC1FB8F0EC0095E00C /* HackSprintBruinTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackSprintBruinTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441176D01FB8F0EC0095E00C /* HOTHBruinTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOTHBruinTapTests.swift; sourceTree = "<group>"; };
 		441176D21FB8F0EC0095E00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441176D71FB8F0EC0095E00C /* HackSprintBruinTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackSprintBruinTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		441176DB1FB8F0EC0095E00C /* HOTHBruinTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOTHBruinTapUITests.swift; sourceTree = "<group>"; };
 		441176DD1FB8F0EC0095E00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E1C672200F1B7A0095955C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44E1C674200F263B0095955C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				441176BB1FB8F0EC0095E00C /* AppDelegate.swift */,
-				441176BD1FB8F0EC0095E00C /* ViewController.swift */,
+				44E1C672200F1B7A0095955C /* ViewController.swift */,
 				441176BF1FB8F0EC0095E00C /* Main.storyboard */,
 				441176C21FB8F0EC0095E00C /* Assets.xcassets */,
 				441176C41FB8F0EC0095E00C /* LaunchScreen.storyboard */,
-				441176C71FB8F0EC0095E00C /* Info.plist */,
+				44E1C674200F263B0095955C /* Info.plist */,
 			);
 			path = HackSprintBruinTap;
 			sourceTree = "<group>";
@@ -232,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E1C675200F263B0095955C /* Info.plist in Resources */,
 				441176C61FB8F0EC0095E00C /* LaunchScreen.storyboard in Resources */,
 				441176C31FB8F0EC0095E00C /* Assets.xcassets in Resources */,
 				441176C11FB8F0EC0095E00C /* Main.storyboard in Resources */,
@@ -259,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441176BE1FB8F0EC0095E00C /* ViewController.swift in Sources */,
+				44E1C673200F1B7A0095955C /* ViewController.swift in Sources */,
 				441176BC1FB8F0EC0095E00C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,9 +430,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35RJCBGV7U;
-				INFOPLIST_FILE = HOTHBruinTap/Info.plist;
+				INFOPLIST_FILE = HackSprintBruinTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Kevin-Tan.HOTHBruinTap";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin-Tan.HackSprintBruinTap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,9 +445,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35RJCBGV7U;
-				INFOPLIST_FILE = HOTHBruinTap/Info.plist;
+				INFOPLIST_FILE = HackSprintBruinTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Kevin-Tan.HOTHBruinTap";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kevin-Tan.HackSprintBruinTap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

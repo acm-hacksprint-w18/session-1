@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HOTHBruinTap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackSprintBruinTap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,13 +48,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACw-0F-VNz">
+                                <rect key="frame" x="20" y="90" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tsz-Lt-xfi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2IN-ng-e6N"/>
                             <constraint firstItem="glg-GL-etE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DgI-cs-JDX"/>
+                            <constraint firstItem="ACw-0F-VNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KlB-nT-Kio"/>
                             <constraint firstItem="JdC-HJ-LYW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OjZ-M8-AD4"/>
                             <constraint firstItem="qda-Kk-9aX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMx-Xo-ota"/>
+                            <constraint firstItem="ACw-0F-VNz" firstAttribute="top" secondItem="JdC-HJ-LYW" secondAttribute="bottom" constant="20" id="T1d-6v-6ds"/>
                             <constraint firstItem="qda-Kk-9aX" firstAttribute="top" secondItem="glg-GL-etE" secondAttribute="bottom" constant="75" id="Uhf-6r-KX5"/>
                             <constraint firstItem="Tsz-Lt-xfi" firstAttribute="top" secondItem="qda-Kk-9aX" secondAttribute="bottom" constant="75" id="ani-HK-Nhb"/>
                             <constraint firstItem="JdC-HJ-LYW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="y0W-oO-QUd"/>
@@ -63,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="highScoreLabel" destination="ACw-0F-VNz" id="fwR-xz-aR5"/>
                         <outlet property="scoreLabel" destination="glg-GL-etE" id="oRM-Pw-8R6"/>
                         <outlet property="startButton" destination="JdC-HJ-LYW" id="MrD-2r-VFi"/>
                         <outlet property="tapButton" destination="qda-Kk-9aX" id="fVl-O5-aDI"/>

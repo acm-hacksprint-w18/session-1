@@ -14,6 +14,8 @@
   - <a href="#score">Incrementing Score when we Tap the Button</a>
   - <a href="#timer">Implementing a Timer</a>
   - <a href="#tap">Disabling and Enabling the Tap Button</a>
+- Keeping Track of High Score
+  - ​
 
 ## <a id="gs">Getting Started</a>
 
@@ -407,3 +409,91 @@ var time: Double = 10
 
 4. Build and run the app again. Congratulations! You have finished your first app!
 
+
+## Keeping Track of High Score
+
+Let's implement a High Score tracker that persists data on the user's phone (so it remembers the user's high score even after the app has been exited!)
+
+### Back to the Interface Bulder
+
+1. Return via the Project Navigator to **Main.storyboard**.
+2. In the bottom-right pane, scroll down until you see the "Label" element.
+
+<img src="https://lh5.googleusercontent.com/CKHesA5Fm5BNgh3p1qcv33wCSaJ4Kp5_erTBcdMTWLj-Fd4k9B6zmr1ABkhf8cKOHwc_k-HzF9njY6Nm3t3k2Sq_LldPgBiOtghmxPwQBIrWUXn0MW2Kf_iyegT6iwDyfqDEMd-x" width="300px">
+
+---
+
+3. Drag a Label and place it just underneath the "Start" button.
+4. Just as before, click the "Add New Constraints" button near the bottom-right of the window.
+5. Set the left and top margins to **20**. The red dashed lines should now be solid.
+6. Click "Add 2 Constraints".
+
+<img src="https://lh6.googleusercontent.com/gU0GKqngZXiM7byzFnZbmPMymbF_9HijAIuCdYR1yHqvL2pk7w5W59ykxqLnr4haCNEqiA5mKsIca-gbKDec97bmTWvIap9rK5j7iVKH4tC8rUN_9xTCV3nY65kpa1m6CnY2wgLe" width="400px"/>
+
+---
+
+7. On the right side of the screen, use the **Attributes Inspector** to change the Label text to "High Score: 0" then press Enter.
+
+<img src="https://lh4.googleusercontent.com/WtWpYSahXcBCfoAPcYw69AceOFYnlC_fRudgnBsfjNfpAr5soS0G52XucLsMmOHWbZMlutbcHQP6SVLccfcJ24xA8PIyAF8WzDBF9s-qF0AbaWiYrDN6NSZEVN73xOUhGG8tquwD" width="300px">
+
+### Linking the Label to our Code
+
+1. Open the **Assistant Editor** using the icon with two overlapping circles near the top-right corner of Xcode.
+2. While holding down control, click on the High Score label we just created and drag to the space directly **below** the startButton line we just made.
+3. In the window that appears, **ensure that the "Type" field says UILabel, else press "Cancel" and try again.**
+4. Set the "Name" field to **highScoreLabel**.
+5. Click "Connect".
+
+<img src="https://lh3.googleusercontent.com/fBO2uN2W69FtuSJ5OG4gG8-FCz6Anh01sNPILw0_lPD7O_UydDyTvH6bkf7esiLyAogEv_2qnVS7VvE-4DnG3gTBYzQsI_oU2prKBDQqxuww94V8-PFO2qLgdoI7WuGeGGWjOQ9S" width="400px"/>
+
+---
+
+6. Close the Assistant Editor by clicking on the "X" on the top right of the pane with our code in it.
+
+<img src="https://lh4.googleusercontent.com/A-RVsXCWjLw7CCSyVnILjcA6unhMfWogMvawakNxymxEXA4XAsPmde8Efr-ql0YH5ypolsSQnb5uTRwzmfKu5a6CUjLadufzZVf8lOHZjQW_dnrlEThuQOdSILP7Ng-Fk0aeGQ19" width="300px">
+
+---
+
+### Implementing a High Score
+
+1. In the Project Navigator on the left, ensure that you have selected **ViewController.swift**.
+
+2. Underneath our declarations of `var time` and `var timer`, add the following properties:
+
+   ```
+   var highScore = 0
+   let highScoreKey = "HighScore"
+   ```
+
+<img src="https://lh3.googleusercontent.com/WTGZi6K7rWPF5imhkwtjAkmAGI52L_vuFXWYNzqpKvNKGkU-wUxvEX7esDw2Ibg2V16P2A9JO83hV7TTdDXZmepeKuSayxBxEOi92IANHFclW8YFNVyhtx2lyhc_UzmnSMzEA3vc" width="300px">
+
+---
+
+3. In `timerAction()`, inside the if statement checking if `time <= 0`, add the following code:
+
+   ```
+   if score > highScore {
+                   
+   	highScore = score
+       highScoreLabel.text = "High Score: " + String(highScore)
+       UserDefaults.standard.set(highScore, forKey: highScoreKey)
+                   
+   }
+   ```
+
+<img src="https://lh4.googleusercontent.com/LH0pH18eLViT_HaaM9MrhU4OB8148g1V2cTfSetxYxiB1z_46YSEcghbv5rttvI6OYoU5pYWgEQsEb1493080AhNwuw56DU49fPPwft5hWblXo94AcqAwga9P47D35l1uOeyF_tD" width="400px">
+
+---
+
+4. Finally, in `viewDidLoad()`, add the following code:
+
+   ```
+   highScore = UserDefaults.standard.integer(forKey: highScoreKey)
+   highScoreLabel.text = "High Score: " + String(highScore)
+   ```
+
+<img src="https://lh5.googleusercontent.com/ugLZufV6MEqs7A97yZz9EB_1puiX8gtGyHn9QWjdmSBTn1I_8afNfDIzSp1SfF4tPcHVW7vaLYd_XmtOPiMbN6MzgPG1EzYQc_1SeX6nNu0DtkrIXSylTt7sh4Zty65uQuMn-cCe" width="500px">
+
+---
+
+Congratulations, you've successfully implemented a high score feature! Happy tapping!

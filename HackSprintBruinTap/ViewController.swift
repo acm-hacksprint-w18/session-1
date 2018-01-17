@@ -17,27 +17,42 @@ class ViewController: UIViewController {
     var timer: Timer!
     var time: Double = 10
     
-    var gameOverView: UIView!
+    var highScore = 0
+    let highScoreKey = "HighScore"
     
     @IBOutlet var startButton: UIButton!
     @IBOutlet var tapButton: UIButton!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var highScoreLabel: UILabel!
     
     // Methods
     
     @objc func timerAction() {
         
+        // Decrease time by 0.01s
         time -= 0.01
         timeLabel.text = String(format: "%.2f", time)
         
+        // If time <= 0, stop the timer.
         if time <= 0 {
             
+            // Invalidate timer and reset timeLabel's text to 0.00.
             timer.invalidate()
             timeLabel.text = "0.00"
             
+            // Reenable buttons.
             startButton.isEnabled = true
             tapButton.isEnabled = false
+            
+            // If score > highScore, we have a new high score!
+            if score > highScore {
+                
+                highScore = score
+                highScoreLabel.text = "High Score: " + String(highScore)
+                UserDefaults.standard.set(highScore, forKey: highScoreKey)
+                
+            }
 
         }
         
@@ -65,13 +80,14 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         tapButton.isEnabled = false
+        
+        highScore = UserDefaults.standard.integer(forKey: highScoreKey)
+        highScoreLabel.text = "High Score: " + String(highScore)
     }
 
     override func didReceiveMemoryWarning() {
