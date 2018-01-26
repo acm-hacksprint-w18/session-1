@@ -330,12 +330,12 @@ var time: Double = 10
    @objc func timerAction() {
            
            time -= 0.01
-           timerLabel.text = String(format: "%.2f", time)
+           timeLabel.text = String(format: "%.2f", time)
            
            if time <= 0 {
                
                timer.invalidate()
-               timerLabel.text = "0.00"
+               timeLabel.text = "0.00"
                
                startButton.isEnabled = true
                
@@ -375,12 +375,12 @@ var time: Double = 10
    func timerAction() {
            
            time -= 0.01
-           timerLabel.text = String(format: "%.2f", time)
+           timeLabel.text = String(format: "%.2f", time)
            
            if time <= 0 {
                
                timer.invalidate()
-               timerLabel.text = "0.00"
+               timeLabel.text = "0.00"
                
                startButton.isEnabled = true
                tapButton.isEnabled = false
@@ -399,7 +399,7 @@ var time: Double = 10
            time = 10
            
            scoreLabel.text = String(score)
-           timerLabel.text = String(format: "%.2f", time)
+           timeLabel.text = String(format: "%.2f", time)
            
            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
            
